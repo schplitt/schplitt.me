@@ -1,0 +1,158 @@
+
+
+
+/* Markdown Default Styles */
+.md > {
+  --fg-light: #888;
+  --fg: #555;
+  --fg-deep: #222;
+  --fg-deeper: #000;
+
+  color: var(--fg);
+}
+
+.md > pre:not(.shiki) {
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+
+.md > .shiki {
+  font-family: 'DM Mono', 'Input Mono', 'Fira Code', monospace;
+  font-size: 0.92em;
+  line-height: 1.4;
+  margin: 0.5em 0;
+}
+
+.md > img {
+  width: 100%;
+}
+
+.md > p > img {
+  width: 100%;
+  --uno: shadow rounded-lg;
+  transform: scale(1.05);
+  margin: 2.6em 0;
+}
+
+.md > a {
+  font-weight: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(125, 125, 125, 0.3);
+  transition: border 0.3s ease-in-out;
+}
+
+.md > a:hover {
+  border-bottom: 1px solid var(--fg);
+}
+
+.md > a code {
+  color: inherit;
+}
+
+.md > hr {
+  width: 50px;
+  margin: 2em auto;
+}
+
+.md > blockquote {
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.6em;
+  padding: 0.5em 1em;
+  margin-left: -1.1em;
+}
+
+.md > blockquote > * {
+  opacity: 0.7;
+}
+
+.md > blockquote > :first-child {
+  margin-top: 0;
+}
+
+.md > blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+.md > blockquote p:first-of-type::before {
+  content: none;
+}
+
+.md > blockquote p:first-of-type::after {
+  content: none;
+}
+
+.md > s {
+  opacity: 0.5;
+}
+
+.md > em {
+  --uno: font-serif;
+  color: var(--fg-deep);
+  font-size: 1.05em;
+}
+
+.md > h1,
+.md > h2,
+.md > h3,
+.md > h4,
+.md > h5,
+.md > h6 {
+  color: var(--fg-deeper);
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.md > h1 {
+  font-size: 2.25em;
+  font-weight: 600;
+}
+
+.md > h2 {
+  font-size: 1.75em;
+  font-weight: 600;
+}
+
+.md > h3 {
+  font-size: 1.375em;
+  font-weight: 600;
+}
+
+.md > h4 {
+  font-size: 1.125em;
+  font-weight: 600;
+}
+
+.md > p {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+.md > ul,
+.md > ol {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-left: 1.5em;
+}
+
+.md > li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.md > code {
+  font-family: 'DM Mono', 'Input Mono', 'Fira Code', monospace;
+  font-size: 0.92em;
+  padding: 0.2em 0.4em;
+  margin: 0 0.2em;
+  border-radius: 4px;
+  background-color: rgba(125, 125, 125, 0.1);
+}
+
+html.dark .md > {
+  --fg-light: #888;
+  --fg: #bbb;
+  --fg-deep: #ddd;
+  --fg-deeper: #fff;
+}

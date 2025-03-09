@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col min-h-dvh">
-    <header class="fixed top-0 left-0 w-full bg-white z-50 px-4 py-3">
+    <header class="w-full px-4 py-2">
       <div class="relative w-full">
         <!-- Absolutely positioned site title at the left -->
         <div class="absolute left-0 top-1/2 -translate-y-1/2 font-bold invisible md:visible">
@@ -11,10 +11,10 @@
         <nav class="w-full flex justify-center">
           <ul class="flex gap-4">
             <li>
-              <SLink to="/">Home</SLink>
+              <SLink to="/" samePage>Home</SLink>
             </li>
             <li>
-              <SLink>Blog</SLink>
+              <SLink to="/blog" samePage>Blog</SLink>
             </li>
 
           </ul>
@@ -23,9 +23,16 @@
     </header>
 
     <!-- Add padding to avoid content being hidden under the header -->
-    <main class="flex-grow pt-16 w-full h-0">
+    <main class="mx-auto max-w-[650px] px-8 min-h-[calc(100dvh-81px)]">
       <NuxtPage />
     </main>
+
+    <footer class="w-full px-4 py-2 opacity-50">
+      <div class="flex justify-center items-center font-light">
+        2025-Present ©Schplitt
+      </div>
+    </footer>
+
   </div>
 </template>
 

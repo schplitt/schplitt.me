@@ -34,12 +34,12 @@ onMounted(async () => {
         phi: 0,
         theta: 0.3, // Adjust to better show Europe
         dark: 0,
-        diffuse: 1.2,
+        diffuse: 0.5,
         mapSamples: 24000,
         mapBrightness: 0.8,
         mapBaseBrightness: 0.05,
         baseColor: [0.9, 0.9, 0.9],
-        markerColor: [47, 202, 237],
+        markerColor: [255, 255, 255],
         glowColor: [1, 1, 1],
         markers: [
             { location: GERMANY_COORDINATES, size: 0.06 },
@@ -69,7 +69,6 @@ onMounted(async () => {
 
     // Add fade-in effect
     setTimeout(() => {
-        console.log('fade in')
         globe?.resize();
         visible.value = true;
     });
@@ -83,10 +82,11 @@ onMounted(async () => {
 
 <template>
     <Teleport to="body">
-        <canvas ref="canvas" class="absolute left-0 top-0 w-full h-full" style="transition: opacity 1s ease;" :style="{
-
-            opacity: visible ? 1 : 0,
-        }"></canvas>
+        <canvas ref="canvas" class="absolute left-0 top-0 w-full h-full -z-10" style="transition: opacity 1s ease;"
+            :class="{
+                'md:opacity-100 opacity-35': visible,
+                'opacity-0': !visible,
+            }"></canvas>
     </Teleport>
 </template>
 
