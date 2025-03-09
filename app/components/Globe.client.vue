@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
 import createGlobe from 'cobe';
 
@@ -22,10 +23,6 @@ onMounted(async () => {
     await nextTick();
 
     let phi = -2.5;
-
-
-
-
 
     globe = createGlobe(canvas.value!, {
         devicePixelRatio: 2,
@@ -82,11 +79,12 @@ onMounted(async () => {
 
 <template>
     <Teleport to="body">
-        <canvas ref="canvas" class="absolute left-0 top-0 w-full h-full -z-10" style="transition: opacity 1s ease;"
+        <canvas
+ref="canvas" class="absolute left-0 top-0 w-full h-full -z-10" style="transition: opacity 1s ease;"
             :class="{
                 'md:opacity-100 opacity-35': visible,
                 'opacity-0': !visible,
-            }"></canvas>
+            }"/>
     </Teleport>
 </template>
 

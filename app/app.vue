@@ -11,12 +11,15 @@
         <nav class="w-full flex justify-center">
           <ul class="flex gap-4">
             <li>
-              <SLink to="/" samePage>Home</SLink>
+              <SLink to="/" same-page>
+                Home
+              </SLink>
             </li>
             <li>
-              <SLink to="/blog" samePage>Blog</SLink>
+              <SLink to="/blog" same-page>
+                Blog
+              </SLink>
             </li>
-
           </ul>
         </nav>
       </div>
@@ -32,7 +35,6 @@
         2025-Present ©Schplitt
       </div>
     </footer>
-
   </div>
 </template>
 

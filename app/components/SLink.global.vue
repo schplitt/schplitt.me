@@ -9,7 +9,8 @@ const { icon = "", samePage = false } = defineProps<{
 </script>
 
 <template>
-    <NuxtLink :to="to" :target="samePage ? undefined : '_blank'"
+    <NuxtLink
+        :to="to" :target="samePage ? undefined : '_blank'"
         class="twp inline-flex items-center align-bottom gap-1 border-b border-dotted border-gray-300 hover:border-gray-600 transition-colors">
         <Icon v-show="icon" :name="icon" class="inline-block align-text-bottom" />
         <span>
