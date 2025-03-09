@@ -11,12 +11,18 @@
         <nav class="w-full flex justify-center">
           <ul class="flex gap-4">
             <li>
-              <SLink to="/" same-page>
+              <SLink
+                to="/"
+                same-page
+              >
                 Home
               </SLink>
             </li>
             <li>
-              <SLink to="/blog" same-page>
+              <SLink
+                to="/blog"
+                same-page
+              >
                 Blog
               </SLink>
             </li>

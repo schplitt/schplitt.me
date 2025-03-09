@@ -9,18 +9,26 @@ useSeoMeta({
 })
 </script>
 
-
 <template>
   <div>
-    <div v-for="post in posts!" :key="post.id">
-    <SLink :to="post.path" same-page>
-      <span>- {{ post.title }}</span>
-    </SLink>
+    <div
+      v-for="post in posts!"
+      :key="post.id"
+    >
+      <SLink
+        :to="post.path"
+        same-page
+      >
+        <span>- {{ post.title }}</span>
+      </SLink>
+    </div>
+    <div
+      v-if="posts && posts.length === 0"
+      class="opacity-50"
+    >
+      Seems like i didn't do anything until now.
+      <br>
+      Check back later.
+    </div>
   </div>
-  <div v-if="posts && posts.length === 0" class="opacity-50">
-    Seems like i didn't do anything until now.
-    <br>
-    Check back later.
-  </div>
-</div>
 </template>
