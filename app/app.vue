@@ -38,7 +38,7 @@
 
     <footer class="w-full px-4 py-2 opacity-50">
       <div class="flex justify-center items-center font-light">
-        2025-Present ©Schplitt
+        2025-Present ©schplitt
       </div>
     </footer>
   </div>

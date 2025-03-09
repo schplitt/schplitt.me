@@ -1,4 +1,4 @@
-# Schplitt
+# schplitt
 
 Hi, i am Jakob, a :Icon{name="twemoji:flag-germany" } German software developer currently working in industrial automation and IIoT.
 
