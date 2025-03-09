@@ -2,12 +2,12 @@
 
 Hi, i am Jakob, a :Icon{name="twemoji:flag-germany" } German software developer currently working in industrial automation and IIoT.
 
-My passions lie in web development in the :SLink{icon="logos:typescript-icon" text="Typescript" to="https://www.typescriptlang.org/"} ecosystem.
+My passions lie in web development with the :SLink{icon="logos:typescript-icon" text="Typescript" to="https://www.typescriptlang.org/"} ecosystem.
 
-As a developer, I am most interested in
-:SLink{icon="logos:vue" text="Vue" to="https://vuejs.org/"} or :SLink{icon="logos:nuxt-icon" text="Nuxt" to="https://nuxt.com/"} for the frontend
-:SLink{icon="unjs:nitro" text="Nitro" to="https://nitro.build/"} or :SLink{icon="logos:nuxt-icon" text="Nuxt" to="https://nuxt.com/"} for the backend
-And all the tools around the Vue and Nuxt ecosystem like :SLink{icon="logos:vitejs" text="Vite" to="https://vite.dev/"}, :SLink{icon="logos:vitest" text="Vitest" to="https://vitest.dev/"}, :SLink{icon="logos:vueuse" text="VueUse" to="https://vueuse.org/"} and much more...
+As a developer, I am most interested in  
+:SLink{icon="logos:vue" text="Vue" to="https://vuejs.org/"} or :SLink{icon="logos:nuxt-icon" text="Nuxt" to="https://nuxt.com/"} for the frontend  
+:SLink{icon="unjs:nitro" text="Nitro" to="https://nitro.build/"} or :SLink{icon="logos:nuxt-icon" text="Nuxt" to="https://nuxt.com/"} for the backend  
+And all the tools around the Vue and Nuxt ecosystem like :SLink{icon="logos:vitejs" text="Vite" to="https://vite.dev/"}, :SLink{icon="logos:vitest" text="Vitest" to="https://vitest.dev/"}, :SLink{icon="logos:vueuse" text="VueUse" to="https://vueuse.org/"} and much more...  
 But I have previously worked with :SLink{icon="logos:angular-icon" text="Angular" to="https://angular.dev/"} and :SLink{icon="logos:c-sharp" text="C#" to="https://dotnet.microsoft.com/en-us/languages/csharp"}.
 
 This place is my personal blog where i write about my experiences and thoughts about web development.
