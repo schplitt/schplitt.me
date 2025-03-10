@@ -52,6 +52,6 @@
 html,
 body,
 #__nuxt {
-  @apply w-dvw h-dvh;
+  @apply w-dvw h-dvh overflow-x-hidden;
 }
 </style>
