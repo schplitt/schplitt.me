@@ -26,7 +26,7 @@ useSeoMeta({
       v-if="posts && posts.length === 0"
       class="opacity-50"
     >
-      Seems like i didn't do anything until now.
+      Seems like I didn't write anything yet.
       <br>
       Check back later.
     </div>

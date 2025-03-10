@@ -73,7 +73,7 @@ onMounted(async () => {
       class="absolute left-0 top-0 w-full h-full -z-10"
       style="transition: opacity 1s ease;"
       :class="{
-        'md:opacity-100 opacity-35': visible,
+        'lg:opacity-55 opacity-35 xl:opacity-100': visible,
         'opacity-0': !visible,
       }"
     />
