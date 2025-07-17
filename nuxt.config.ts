@@ -12,9 +12,6 @@ export default defineNuxtConfig({
 
   css: ['./app/assets/markdown.css'],
 
-  future: {
-    compatibilityVersion: 4,
-  },
   compatibilityDate: '2024-11-01',
 
   eslint: {
