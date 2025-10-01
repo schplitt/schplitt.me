@@ -11,7 +11,6 @@ useSeoMeta({
 
 <template>
   <div>
-    <Globe />
     <Render :value="home!" />
   </div>
 </template>
