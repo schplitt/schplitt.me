@@ -38,8 +38,5 @@
       "esbuild"
     ]
   },
-  "packageManager": "pnpm@10.13.1",
-  "optionalDependencies": {
-    "better-sqlite3": "^12.4.1"
-  }
+  "packageManager": "pnpm@10.13.1"
 }
