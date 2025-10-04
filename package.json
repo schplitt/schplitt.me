@@ -12,24 +12,24 @@
     "lint:fix": "eslint --fix"
   },
   "dependencies": {
-    "@nuxt/content": "^3.6.3",
+    "@nuxt/content": "^3.7.1",
     "@nuxt/icon": "1.10.3",
     "@nuxtjs/google-fonts": "3.2.0",
     "@vueuse/core": "^12.8.2",
     "@vueuse/nuxt": "12.8.2",
-    "cobe": "^0.6.4",
-    "nuxt": "^4.0.0",
+    "cobe": "^0.6.5",
+    "nuxt": "^4.1.2",
     "three": "^0.174.0",
-    "vue": "^3.5.17",
+    "vue": "^3.5.22",
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.17.0",
+    "@antfu/eslint-config": "^4.19.0",
     "@nuxt/eslint": "1.2.0",
     "@nuxtjs/tailwindcss": "^6.14.0",
-    "eslint": "^9.31.0",
+    "eslint": "^9.37.0",
     "tailwindcss-scoped-preflight": "^3.4.12",
-    "typescript": "^5.8.3"
+    "typescript": "^5.9.3"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
@@ -38,5 +38,5 @@
       "esbuild"
     ]
   },
-  "packageManager": "pnpm@10.13.1"
+  "packageManager": "pnpm@10.18.0"
 }
