@@ -12,7 +12,7 @@ useSeoMeta({
 <template>
   <div>
     <ContentRenderer
-    :value="home!"
-  />
+      :value="home!"
+    />
   </div>
 </template>
