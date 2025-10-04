@@ -1,9 +1,8 @@
 <script setup lang="ts">
-const { icon = '', samePage = false } = defineProps<{
+const { icon = '' } = defineProps<{
   icon?: string
   to?: string
   text?: string
-  samePage?: boolean
 }>()
 </script>
 
