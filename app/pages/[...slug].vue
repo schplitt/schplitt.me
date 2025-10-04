@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="flex flex-col items-center justify-center flex-1 h-1">
+  <div class="flex flex-col items-center justify-center">
     I think you didn't want to go here, eh?
     <SLink to="/">
       Go back home

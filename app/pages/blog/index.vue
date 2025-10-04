@@ -1,6 +1,6 @@
 <script setup lang="ts">
-const { data: posts } = await useAsyncData('blogs', () => {
-  return queryCollection('posts').all()
+const { data: posts } = await useAsyncData('blog', () => {
+  return queryCollection('blog').all()
 })
 
 useSeoMeta({
@@ -13,7 +13,7 @@ useSeoMeta({
   <div>
     <div
       v-for="post in posts!"
-      :key="post.id"
+      :key="post.title + post.date"
     >
       <SLink
         :to="post.path"
