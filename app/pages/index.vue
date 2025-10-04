@@ -11,6 +11,8 @@ useSeoMeta({
 
 <template>
   <div>
-    <Render :value="home!" />
+    <ContentRenderer
+    :value="home!"
+  />
   </div>
 </template>
