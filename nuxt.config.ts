@@ -1,16 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
-    '@nuxtjs/google-fonts',
-    '@nuxtjs/tailwindcss',
-    '@nuxt/icon',
+    '@nuxt/ui',
     '@nuxt/content',
     '@vueuse/nuxt',
     '@nuxt/eslint',
   ],
   devtools: { enabled: true },
 
-  css: ['./app/assets/markdown.css'],
+  css: ['./app/assets/main.css'],
+
+  ui: {
+    colorMode: false,
+  },
 
   compatibilityDate: '2024-11-01',
 
@@ -20,9 +22,4 @@ export default defineNuxtConfig({
     },
   },
 
-  googleFonts: {
-    families: {
-      'Space Mono': [400, 600, 700],
-    },
-  },
 })
