@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 const { data: posts } = await useAsyncData('blog', () => {
   return queryCollection('blog').all()
 })
@@ -8,7 +7,6 @@ useSeoMeta({
   title: 'schplitt.me - Blog',
   description: 'A personal blog by schplitt',
 })
-
 </script>
 
 <template>
@@ -28,10 +26,10 @@ useSeoMeta({
         />
       </template>
       <template #description>
-        <div></div>
+        <div />
       </template>
     </UTimeline>
-    
+
     <div
       v-else
       class="opacity-50 text-center py-8"

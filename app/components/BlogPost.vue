@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 type Props = {
   title: string
   description?: string
@@ -8,7 +7,6 @@ type Props = {
 }
 
 defineProps<Props>()
-
 </script>
 
 <template>
@@ -18,7 +16,10 @@ defineProps<Props>()
     :to="to"
     variant="outline"
   >
-    <template v-if="tags && tags.length > 0" #footer>
+    <template
+      v-if="tags && tags.length > 0"
+      #footer
+    >
       <div class="flex flex-wrap gap-2">
         <UBadge
           v-for="tag in tags"
