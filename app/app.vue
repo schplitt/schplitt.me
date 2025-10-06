@@ -32,8 +32,7 @@
         </div>
       </header>
 
-      <!-- Add padding to avoid content being hidden under the header -->
-      <main class="mx-auto max-w-[650px] px-8 min-h-[calc(100dvh-81px)]">
+      <main class="mx-auto min-h-[calc(100dvh-81px)] max-w-2xl pt-4">
         <NuxtPage />
       </main>
 
