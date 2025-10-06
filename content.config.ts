@@ -11,9 +11,10 @@ export default defineContentConfig({
       source: 'blog/**/*.md',
       schema: z.object({
         tags: z.array(z.string()).optional(),
-        date: z.date(),
-        title: z.string().min(5),
-        description: z.string().min(10),
+        icon: z.string(),
+        date: z.string().date(),
+        title: z.string(),
+        description: z.string().optional(),
       }),
     }),
   },
