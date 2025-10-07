@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxt/eslint',
   ],
+
   devtools: { enabled: true },
 
   css: ['./app/assets/main.css'],
@@ -20,6 +21,14 @@ export default defineNuxtConfig({
     config: {
       stylistic: true,
     },
+  },
+
+  icon: {
+    clientBundle: {
+      scan: true,
+    },
+    provider: 'iconify',
+    serverBundle: false,
   },
 
 })

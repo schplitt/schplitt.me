@@ -48,6 +48,15 @@ importers:
       '@antfu/eslint-config':
         specifier: ^4.19.0
         version: 4.19.0(@vue/compiler-sfc@3.5.22)(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)
+      '@iconify-json/logos':
+        specifier: ^1.2.9
+        version: 1.2.9
+      '@iconify-json/twemoji':
+        specifier: ^1.2.4
+        version: 1.2.4
+      '@iconify-json/unjs':
+        specifier: ^1.2.3
+        version: 1.2.3
       '@nuxt/eslint':
         specifier: 1.2.0
         version: 1.2.0(@typescript-eslint/utils@8.45.0(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3))(@vue/compiler-sfc@3.5.22)(eslint@9.37.0(jiti@2.6.1))(magicast@0.3.5)(typescript@5.9.3)(vite@7.1.9(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.44.0)(yaml@2.8.1))
@@ -588,6 +597,15 @@ packages:
   '@humanwhocodes/retry@0.4.3':
     resolution: {integrity: sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==}
     engines: {node: '>=18.18'}
+
+  '@iconify-json/logos@1.2.9':
+    resolution: {integrity: sha512-G6VCdFnwZcrT6Eveq3m43oJfLw/CX8plwFcE+2jgv3fiGB64pTmnU7Yd1MNZ/eA+/Re2iEDhuCfSNOWTHwwK8w==}
+
+  '@iconify-json/twemoji@1.2.4':
+    resolution: {integrity: sha512-REYJeXhzaLktNe32DxJJf3t65sYC5KO9K0Jh+RApXRBAo1/IB+jBqd8rny2sXci+wtQLBEfD4z4AGCLBrTMGWA==}
+
+  '@iconify-json/unjs@1.2.3':
+    resolution: {integrity: sha512-hSeGbUcb9+wKWs8Mkwh0fwRLYErGLIuc1L0FEkEfbC++8RH3QjLGY4KNFnbH+jWiBLg3+rFuyEmHjub1dJPkZw==}
 
   '@iconify/collections@1.0.601':
     resolution: {integrity: sha512-0rTkng4arHTfeEPA+h5zHHBCdvRsWxcrGbit+dOGyRqNj7Rtx3PwBtdh/q9+h8wai5j+wcbkaJSQPHqgRLb2zw==}
@@ -6476,6 +6494,18 @@ snapshots:
   '@humanwhocodes/module-importer@1.0.1': {}
 
   '@humanwhocodes/retry@0.4.3': {}
+
+  '@iconify-json/logos@1.2.9':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/twemoji@1.2.4':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/unjs@1.2.3':
+    dependencies:
+      '@iconify/types': 2.0.0
 
   '@iconify/collections@1.0.601':
     dependencies:
