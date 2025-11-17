@@ -11,11 +11,27 @@ export default defineNuxtConfig({
 
   css: ['./app/assets/main.css'],
 
+  content: {
+    build: {
+      markdown: {
+        highlight: {
+          theme: 'catppuccin-latte',
+        },
+      },
+    },
+  },
+
   ui: {
     colorMode: false,
   },
 
   compatibilityDate: '2024-11-01',
+
+  runtimeConfig: {
+    public: {
+      siteUrl: 'https://schplitt.me',
+    },
+  },
 
   eslint: {
     config: {
