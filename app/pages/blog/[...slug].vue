@@ -65,9 +65,7 @@ const tweetUrl = computed(() => `https://twitter.com/intent/tweet?text=${encodeU
           variant="soft"
           size="sm"
           icon="i-simple-icons-x"
-        >
-          Twitter
-        </UButton>
+        />
       </div>
 
       <SLink
