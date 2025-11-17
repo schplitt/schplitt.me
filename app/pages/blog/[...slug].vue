@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 const route = useRoute()
+const config = useRuntimeConfig()
 const { data: page } = await useAsyncData(route.path, async () => {
   return await queryCollection('blog').path(route.path).first()
 })
@@ -7,12 +8,22 @@ const { data: page } = await useAsyncData(route.path, async () => {
 if (!page.value) {
   await navigateTo('/')
 }
+
+const baseUrl = config.public.siteUrl || 'https://schplitt.me'
+
+const tweetText = computed(() => {
+  if (!page.value) return ''
+  const url = `${baseUrl}${page.value.path}`
+  return `Reading @schplitt's ${url}\n\nI think...`
+})
+
+const tweetUrl = computed(() => `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText.value)}`)
+
 </script>
 
 <template>
-  <div>
-    <!-- Render title and date here above content -->
-    <!-- Render back link -->
+  <div class="flex flex-col gap-12">
+     <div>
     <SLink
       to="/blog"
       class="text-sm mb-4 inline-block"
@@ -35,6 +46,37 @@ if (!page.value) {
     <ContentRenderer
       v-if="page"
       :value="page"
+      class="mb-8"
     />
+    </div>
+
+    <!-- Comment section -->
+    <div>
+      <p class="text-sm text-muted mb-3">
+        Comment on:
+      </p>
+      <div class="flex gap-3 mb-6">
+
+        <UButton
+          :to="tweetUrl"
+          target="_blank"
+          rel="noopener noreferrer"
+          color="neutral"
+          variant="soft"
+          size="sm"
+          icon="i-simple-icons-x"
+        >
+          Twitter
+        </UButton>
+      </div>
+
+      <SLink
+        to="/blog"
+        class="text-sm inline-block"
+        icon="mdi:arrow-left"
+      >
+        Blog
+      </SLink>
+    </div>
   </div>
 </template>

@@ -27,6 +27,12 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2024-11-01',
 
+  runtimeConfig: {
+    public: {
+      siteUrl: 'https://schplitt.me',
+    },
+  },
+
   eslint: {
     config: {
       stylistic: true,

@@ -32,7 +32,7 @@
         </div>
       </header>
 
-      <main class="mx-auto min-h-[calc(100dvh-81px)] max-w-3xl px-8 pt-4 md:px-0">
+      <main class="mx-auto min-h-[calc(100dvh-81px)] max-w-3xl px-4 md:px-6 lg:px-0 pt-4">
         <NuxtPage />
       </main>
 
