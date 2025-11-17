@@ -11,6 +11,16 @@ export default defineNuxtConfig({
 
   css: ['./app/assets/main.css'],
 
+  content: {
+    build: {
+      markdown: {
+        highlight: {
+          theme: 'catppuccin-latte',
+        },
+      },
+    },
+  },
+
   ui: {
     colorMode: false,
   },

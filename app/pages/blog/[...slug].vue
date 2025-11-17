@@ -15,9 +15,10 @@ if (!page.value) {
     <!-- Render back link -->
     <SLink
       to="/blog"
-      class="text-sm text-blue-500 hover:underline mb-4 inline-block"
+      class="text-sm mb-4 inline-block"
+      icon="mdi:arrow-left"
     >
-      &larr; Blog
+      Blog
     </SLink>
     <h1
       v-if="page"
