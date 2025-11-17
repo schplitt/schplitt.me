@@ -40,7 +40,9 @@ const tweetUrl = computed(() => `https://twitter.com/intent/tweet?text=${encodeU
         v-if="page && page.date"
         class="text-sm text-muted mb-4"
       >
-        {{ new Date(page.date).toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' }) }}
+        {{ new Date(page.date).toLocaleDateString(undefined, { year: 'numeric',
+                                                               month: 'long',
+                                                               day: 'numeric' }) }}
       </p>
       <ContentRenderer
         v-if="page"
