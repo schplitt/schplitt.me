@@ -25,13 +25,13 @@ export default defineNuxtConfig({
     colorMode: false,
   },
 
-  compatibilityDate: '2024-11-01',
-
   runtimeConfig: {
     public: {
       siteUrl: 'https://schplitt.me',
     },
   },
+
+  compatibilityDate: '2024-11-01',
 
   eslint: {
     config: {
