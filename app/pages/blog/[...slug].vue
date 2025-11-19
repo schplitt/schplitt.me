@@ -18,6 +18,9 @@ const tweetUrl = computed(() => `https://twitter.com/intent/tweet?text=${encodeU
 useSeoMeta({
   title: () => page.value ? page.value.title : 'Blog Post Not Found',
   description: () => page.value ? page.value.description : 'The blog post you are looking for does not exist.',
+  ogTitle: () => page.value ? page.value.title : 'Blog Post Not Found',
+  ogDescription: () => page.value ? page.value.description : 'The blog post you are looking for does not exist.',
+  twitterCard: 'summary',
 })
 
 // TODO: currently seems to have a rendering issue

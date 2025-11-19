@@ -2,6 +2,9 @@
 useSeoMeta({
   title: 'Page Not Found - schplitt.me',
   description: 'Seems like you took a wrong turn.',
+  ogTitle: 'Page Not Found',
+  ogDescription: 'Seems like you took a wrong turn.',
+  twitterCard: 'summary',
 })
 </script>
 
