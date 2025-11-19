@@ -2,3 +2,8 @@
 @import "@nuxt/ui";
 
 @source "../../../content/**/*";
+
+
+@theme {
+    --font-sans: "Space Mono", monospace;
+}
