@@ -6,7 +6,8 @@ useSeoMeta({
   description: 'A personal blog by schplitt',
   ogTitle: 'Home',
   ogDescription: 'A personal blog by schplitt',
-  twitterCard: 'summary',
+  ogImage: 'https://schplitt.me/schplitt.png',
+  twitterCard: 'summary_large_image',
 })
 
 // const mdcVars = ref({})

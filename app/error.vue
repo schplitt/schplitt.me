@@ -4,7 +4,8 @@ useSeoMeta({
   description: 'Seems like you took a wrong turn.',
   ogTitle: 'Page Not Found',
   ogDescription: 'Seems like you took a wrong turn.',
-  twitterCard: 'summary',
+  ogImage: 'https://schplitt.me/schplitt.png',
+  twitterCard: 'summary_large_image',
 })
 </script>
 

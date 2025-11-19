@@ -8,7 +8,8 @@ useSeoMeta({
   description: 'A personal blog by schplitt',
   ogTitle: 'Blog',
   ogDescription: 'A personal blog by schplitt',
-  twitterCard: 'summary',
+  ogImage: 'https://schplitt.me/schplitt.png',
+  twitterCard: 'summary_large_image',
 })
 </script>
 
