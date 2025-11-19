@@ -14,6 +14,9 @@ const tweetText = computed(() => {
 })
 
 const tweetUrl = computed(() => `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText.value)}`)
+
+// TODO: currently seems to have a rendering issue
+// https://github.com/nuxt/content/issues/3534
 </script>
 
 <template>
