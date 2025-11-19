@@ -1,7 +1,7 @@
 ---
 date: 2025-11-17
-title: "Typescript Type Inference Pitfalls in Schema Libraries"
-description: "Some of my learnings regarding the typescript type system while building a schema validation library."
+title: "Typescript Type Inference Pitfall"
+description: "Some of my learnings regarding the typescript type system while building my schema validation library Narro."
 tags: ["typescript", "schema"]
 icon: logos:typescript-icon
 ---

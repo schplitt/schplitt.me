@@ -4,8 +4,11 @@ const { data: posts } = await useAsyncData('blog', () => {
 })
 
 useSeoMeta({
-  title: 'schplitt.me - Blog',
+  title: 'Blog',
   description: 'A personal blog by schplitt',
+  ogTitle: 'Blog',
+  ogDescription: 'A personal blog by schplitt',
+  twitterCard: 'summary',
 })
 </script>
 
