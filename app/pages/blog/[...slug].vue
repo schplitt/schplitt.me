@@ -20,7 +20,8 @@ useSeoMeta({
   description: () => page.value ? page.value.description : 'The blog post you are looking for does not exist.',
   ogTitle: () => page.value ? page.value.title : 'Blog Post Not Found',
   ogDescription: () => page.value ? page.value.description : 'The blog post you are looking for does not exist.',
-  twitterCard: 'summary',
+  ogImage: 'https://schplitt.me/schplitt.png',
+  twitterCard: 'summary_large_image',
 })
 
 // TODO: currently seems to have a rendering issue
