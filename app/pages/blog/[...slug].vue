@@ -15,6 +15,11 @@ const tweetText = computed(() => {
 
 const tweetUrl = computed(() => `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText.value)}`)
 
+useSeoMeta({
+  title: () => page.value ? page.value.title : 'Blog Post Not Found',
+  description: () => page.value ? page.value.description : 'The blog post you are looking for does not exist.',
+})
+
 // TODO: currently seems to have a rendering issue
 // https://github.com/nuxt/content/issues/3534
 </script>

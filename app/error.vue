@@ -1,3 +1,10 @@
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Page Not Found - schplitt.me',
+  description: 'Seems like you took a wrong turn.',
+})
+</script>
+
 <template>
   <UApp>
     <NuxtLayout>
